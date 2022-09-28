@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<link rel="icon" href="https://beegroup.cm/assets/home/assets/images/favicon.png" type="image/gif" sizes="">
+
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		function googleTranslateElementInit()
+		 {
+			new google.translate.TranslateElement(
+			{pageLanguage: 'en'},
+			'google_translate_element'
+			);
+		}
+	</script>
+
+	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+	</script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<style type="text/css">
+		*
+		{
+			font-family: Verdana, sans-serif;
+		}
+		.idcard
+		{
+			border-radius: 7px;
+			box-shadow: 0px 1px 2px 0px;
+			background: white;
+			padding: 10px;
+			height: 450px;
+		}
+		.footer1
+		{
+			margin: 50px;
+		}
+		.footer1>thead>tr>th
+		{
+			color: yellow;
+			padding: 10px;
+		}
+		.footer1>tbody>tr>td
+		{
+
+			color: white;
+			padding: 6px;
+		}
+	    tbody > tr > td > a
+		{
+			color: white;
+			text-decoration: none;
+		}
+		.xy
+		{
+			background: url('map2.png');
+			background-repeat: no-repeat;
+			background-size: 500px 300px;
+			background-position: center;
+
+		}
+		.big_pic
+		{
+			background: url('indexpic_e.jpg');
+			width: 100%;
+			height: 500px;
+			position: relative;
+			
+		}
+		.text_over_pic
+		{ 	
+			padding: 10px;
+			padding-right: 100px;
+			padding-left: 20px;
+			position: absolute;
+			top: 30%;
+			left: 5%;			
+			color: black;
+			 background-color: rgba(0,0,0,0.7);
+			
+		}
+	</style>
+</head>
+<body>
+	<!--Navbar1-->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="" style="color: black;"><span><i class="fa fa-envelope" style="color: indianred;"></i></span> support@beegroup.cm</a></li>
+				<li><a href="" style="color: black;"><span><i class="fa fa-phone" style="color: blue;"></i></span> +237659363106</a></li>
+			</ul>	
+			<button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#navbar1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>		
+		
+			<div class="navbar-collapse collapse" id="navbar1">
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://facebook.com/"><span><i class="fa fa-facebook" style="color: steelblue;"></i></span></a></li>
+				<li><a href="https://twitter.com/"><span><i class="fa fa-twitter" style="color: deepskyblue;"></i></span></a></li>
+				<li><a href="https://instagram.com/"><span><i class="fa fa-instagram	" style="color: deeppink;"></i></span></a></li>
+				<li><a href="https://linkedin.com/"><span><i class="fa fa-linkedin" style="color: royalblue;"></i></span></a></li>
+				<li><a style="color: goldenrod;"><div id="google_translate_element"></div></a></li>		
+			</ul>	
+			</div>		
+		</div>
+		</nav>
+	
+	<!--Navbar2-->
+	<nav class="navbar navbar-inverse" style="padding: 10px; background: black;">
+		<div class="navbar-header">
+			<div class="navbar-brand"><a href="beeHome.html"><img src="https://beegroup.cm/assets/home/assets/images/logo.png" width="30%" style="margin-bottom: 10px;"></a></div>
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div id="navbar2" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="become_a_driver.html" style="color: white; font-size: 13px;">BECOME A DRIVER</a></li>
+				<li><a href="become_a_partner.html" style="color: white; font-size: 13px;">BECOME A PARTNER</a></li>
+				<li><a href="about.html" style="color: white; font-size: 13px;">ABOUT</a></li>
+				<li class="dropdown"><a style="color: white; font-size: 13px;" data-toggle="dropdown" class="dropdown-toggle">SERVICES<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="beeMoto.html">BEE Moto</a></li>
+					<li><a href="beeDelivery.html">BEE Delivery</a></li>
+				</ul>
+				</li>
+				<li><a href="login.html" style="color: white; font-size: 13px;">LOGIN</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--Picture-->
+	<div class="big_pic">
+		<div class="text_over_pic">
+			<h3 style="color: gold; font-weight: 800;">TRANSPORT & DELIVERY <br> SERVICE</h3>
+			<p style="color: white;">Reduce your daily commute time by 70% on a safe and <br>affordable Moto</p>
+				<div style="padding-left: 40px;">
+				<button class="btn btn-warning" style="background: gold; "><a href="login.html" style="color: black;"><b>Place Request</b></a></button>
+			</div>
+			
+			
+		</div>
+	</div>
+	<br><br>
+
+	<!--Explore bee app-->
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10" style="text-align: center;">
+		<h1 style="font-weight: 800;">Explore the BEE app</h1><br>
+		<p>The BEE app provides a last mile delivery service option (BEE Delivery) coupled with a ride hailing service using motorcycle (BEE Moto). The app is readily available for IOS and Android devices </p>
+	</div>
+		<div class="col-md-1"></div>
+	</div><br><br>
+	<!--mobile app-->
+	<div class="row">
+		<!--Left Side-->
+		<div class="col-md-4">
+			<div>
+				<div class="col-md-2">
+
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify"><br>
+					<p style="font-size: 20px;"><img src="fixed-price.png">&nbsp&nbspFixed Price</p>
+					<p>No need to worry about bargaining price with drivers . Bee will calculate the price before your trip and you pay the fixed price</p><br>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="col-md-2">
+
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify">
+					<p style="font-size: 20px;"><img src="helmet.png">&nbsp&nbspHelmet</p>
+					<p>Both driver and passenger are given standard helmet to ensure safety</p><br>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="col-md-2">
+
+				</div>
+				<div class="col-md-10">
+					<div class="text-justify">
+					<p style="font-size: 20px;"><img src="hairnet.png">&nbsp&nbspFree Hairnet</p>
+					<p>To maintain hygienity free hairnet is provided to every passenger for the trip</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--Center-->
+		<div class="col-md-4" style="text-align: center;"><img src="https://beegroup.cm/assets/home/assets/images/banner-mobile.svg" width="75%"></div>
+
+		<!--Right Side-->
+		<div class="col-md-4">
+			
+			<div>
+				
+				<div class="col-md-10">
+					<div class="text-justify"><br>
+					<p style="font-size: 20px;"><img src="location.png">&nbsp&nbsp Enter Destination</p>
+					<p>Enter the destination location where you need to reach</p><br>
+					</div>
+				</div>
+				<div class="col-md-2">
+
+				</div>
+			</div>
+
+			<div>
+				
+				<div class="col-md-10">
+					<div class="text-justify">
+					<p style="font-size: 20px;"><img src="price.png">&nbsp&nbsp Price Estimation</p>
+					<p>Estimated price for the destination location is calculated</p><br>
+					</div>
+				</div>
+				<div class="col-md-2">
+
+				</div>
+			</div>
+
+			<div>
+				<div class="col-md-10">
+					<div class="text-justify">
+					<p style="font-size: 20px;"><img src="helmet.png">&nbsp&nbsp Drivers Availability</p>
+					<p>Looks for the nearby drivers for your trip</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+
+				</div>
+			</div>
+
+			<div>
+			
+				<div class="col-md-10">
+					<div class="text-justify">
+					<p style="font-size: 20px;"><img src="moto.png">&nbsp&nbsp Enjoy Ride!</p>
+					<p>Enjoy your safe trip with BEE</p>
+					</div>
+				</div>
+				<div class="col-md-2">
+
+				</div>
+			</div>
+
+
+		</div>
+	</div><br><br>
+
+	<!--Bee Moto-->
+	<div class="row" style="background: whitesmoke;"><br><br>
+		<div class="col-md-7">
+			<div class="row">
+				<div class="col-md-1"></div>
+			<div class="col-md-10">
+
+				<h3 style="font-weight: 800;">BEE Moto</h3>
+			<p class="text-justify">BeeMoto offers you a safe way to move around Douala Cameroon. You can conveniently hail a motorcycle ride with the tap of a button and have a Driver (rider) pick and drop you or your packages off at your destination. </p>
+			</div>
+			<div class="col-md-1"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<h3><b>BEE Partner</b></h3>
+			<p class="text-justify">With BeePartner, your dispatch needs are covered in bulk. Get your packages delivered to multiple locations with dedicated Drivers. Now you can send goods or documents fast and easy. </p>
+			</div>
+			<div class="col-md-1"></div>
+			</div>
+		</div>
+		<div class="col-md-5"><img src="corporate.png"><br><br></div>
+	</div>
+
+	<!--Meet our Drivers-->
+	<br><br>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8" style="text-align: center;">
+		<h1 style="font-weight: 800;">Meet our Drivers</h1><br>
+		<p>Bee Drivers all receive extensive training to make <br>them the safest and most professional drivers on the streets. </p>
+	</div>
+		<div class="col-md-2"></div>
+	</div><br><br>
+
+	<!--Driver Feedbacks-->
+	<div class="row" style="padding: 20px; margin: 5px;">
+		<div class="col-md-4">
+			<div class="idcard"><img src="driver1.png" style="border-radius: 15px; margin-top: 20px; margin-left: 10px;" width="90%">
+			<br><br><p class="text-justify" style=" margin-left: 10px; margin-right: 10px; ">"Since I became a Driver, I have been able to make a living and properly take care of myself and Family. Thank you Bee."</p>
+			<p style=" margin-left: 10px; margin-right: 10px; font-size: 20px; font-weight: 600;"><br>Ngassa Michel</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="idcard"><img src="driver2.png" style="border-radius: 15px; margin-top: 20px; margin-left: 10px;" width="90%">
+			<br><br><p class="text-justify" style=" margin-left: 10px; margin-right: 10px; ">"One of the reasons I like working at Bee is because we are a big Family and everybody here is treated with respect."</p>
+			<p style=" margin-left: 10px; margin-right: 10px; font-size: 20px; font-weight: 600;"><br>Long mabom</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="idcard"><img src="driver3.png" style="border-radius: 15px; margin-top: 20px; margin-left: 10px;"width="90%">
+			<br><br><p class="text-justify" style=" margin-left: 10px; margin-right: 10px; ">"I started working in Bee to support my family. And Now they all Happy. Thank you Bee for this best opportunity."</p>
+			<p style=" margin-left: 10px; margin-right: 10px; font-size: 20px; font-weight: 600;"><br>Nguechou mongho</p>
+			</div>
+		</div>
+	</div>
+
+	<!--Phone Number-->
+
+	<div class="xy">
+		<center>	
+			<br><br>
+			<h2 style="font-weight: 600;">You can give us a call</h2>
+			<h2 style="font-weight: 600; background: yellow; border-radius: 30px; display: table; padding: 10px; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<span><i class="fa fa-phone"></i></span>+237659363106
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2><br><br><br>
+		</center>
+	</div>
+
+	<!--footer1-->
+
+	<div style="background: black; height: 450px;"><br>
+		<center><img src="beelogo.png" width="8%"></center>
+		<div class="row">
+			<div class="col-md-4">
+				<table class="footer1" >
+					<thead>
+						<th><h4>ABOUT</h4></th>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="about.html"style="color: white; text-decoration: none;">Who We Are</a></td>
+						</tr>
+						<tr>
+							<td><a href="start_a_career.html"style="color: white; text-decoration: none;">Careers</a></td>
+						</tr>
+						<tr>
+							<td><a href="pricing.html"style="color: white; text-decoration: none;">Pricing</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col-md-4">
+				<table class="footer1">
+					<thead>
+						<th><h4>COMPANY</h4></th>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="become_a_driver.html" style="color: white; text-decoration: none;">Become a Driver</a></td>
+						</tr>
+						<tr>
+							<td><a href="become_a_partner.html"style="color: white; text-decoration: none;">Become a Partner</a></td>
+						</tr>
+						<tr>
+							<td><a href="media_press.html"style="color: white; text-decoration: none;">Media & Press</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col-md-4">
+				<table class="footer1">
+					<thead>
+						<th><h4>CONTACT US</h4></th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>+237659363106</td>
+						</tr>
+						<tr>
+							<td>+237650520150</td>
+						</tr>
+						<tr>
+							<td>info@beegroup.cm</td>
+						</tr>
+						<tr>
+							<td>support@beegroup.cm</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!--footer2-->
+
+
+		<div class="row foot2" style="text-align: center;">
+			<div class="col-md-4">
+				<a href="https://apps.apple.com/in/app/beemoto-user-app/id1498951105"><img src="app-store.png" width="35%"></a>
+				&nbsp
+				<a href="https://play.google.com/store/apps/details?id=com.tt.bee.user"><img src="play-store.png"  width="35%"></a>
+			</div>
+
+			<div class="col-md-4" >
+				<br>
+				<p> <a href="faq.html" style="color: white; text-decoration: none;" >FAQs | </a>
+					<a href="terms.html" style="color: white; text-decoration: none;"> Terms | Privacy Policy | Shipping Policy </a>
+				</p>
+			</div>
+
+			<div class="col-md-4" style="color: yellow; text-align: left; font-size: 30px;">
+				<a href="https://facebook.com/" style="color: yellow; text-decoration: none;"><i class="fa fa-facebook-square"></i></a>
+				<a href="https://twitter.com/" style="color: yellow; text-decoration: none;"><i class="fa fa-twitter-square"></i></a>
+				<a href="https://linkedin.com/" style="color: yellow; text-decoration: none;"><i class="fa fa-linkedin-square"></i></a>
+			</div>
+		</div>
+		<center><div style="color: antiquewhite;">Copyright (c) 2021 . BeeGroup</div></center>
+	</div>
+
+
+	
+</body>
+</html>
