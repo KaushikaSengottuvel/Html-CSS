@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mamaearth Contact</title>
+	 <link rel="stylesheet" href="bootstrap.min.css">
+	 <script src="jquery.min.js"></script>
+	 <script src="bootstrap.min.js"></script>
+	 <style type="text/css">
+	 	.justify
+	 	{
+	 		display: flex;
+	 		justify-content: space-around;
+	 	}
+	 	.pad
+	 	{
+	 		text-align: center;
+	 		padding: 10px;
+	 	}
+	 	.foot
+	 	{
+	 		background: lightgrey;
+	 		color: black;
+	 	}
+	 .nav-tabs > li > a
+	 {
+	 	border: 1px solid lightgrey;
+	 }
+	 </style>
+
+</head>
+<body>
+<nav class="navbar navbar-default" style="font-size: 20px;">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="navbar-brand"><img src="mamaearth-logo.png" width="100%" height="40px"></div>
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"><span class="caret"></span></button>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown"><a href="" data-toggle="dropdown" class="dropdown-toggle">About<span class="caret"></span></a>
+			<ul  class="dropdown-menu">
+				<li><a href="body.html" >Body</a></li>
+				<li><a href="beauty.html" >Beauty</a></li>
+				<li><a href="face.html" >Face</a></li>
+			</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+		</div>
+	</nav>
+
+	<!--Image Slide-->
+	<div class="container-fluid">
+	<div class="carousel slide" id="slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#slide" data-slide-to="0" class="active"></li>
+				<li data-target="#slide" data-slide-to="1"></li>
+				<li data-target="#slide" data-slide-to="2"></li>
+				<li data-target="#slide" data-slide-to="3"></li>
+			</ol>
+
+		<div class="carousel-inner">
+			<div class="item active">
+				<center><img src="Desktop1.jpg" style="height: 400px;"></center>
+			</div>
+			<div class="item">
+				<center><img src="Desktop0.jpg" style="height: 400px; width: 75%;"></center>
+			</div>
+			<div class="item">
+				<center><img src="Desktop2.jpg" style="height: 400px; "></center>
+			</div>
+			<div class="item">
+				<center><img src="Desktop3.jpg" style="height: 400px; width: 75%;"></center>
+			</div>
+		</div>
+
+		<a href="#slide" class="left carousel-control" data-slide="prev"></a>
+		<a href="#slide" class="right carousel-control" data-slide="next"></a>
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+		<ul class="nav nav-tabs">
+			<li><a href="#gurgaon" data-toggle="tab">Gurgaon</a></li>
+			<li><a href="#delhi" data-toggle="tab">New Delhi</a></li>
+			<li><a href="#noida" data-toggle="tab">Noida</a></li>
+			<li><a href="#chandigarh" data-toggle="tab">Chandigarh</a></li>
+		</ul>
+
+		<div class="tab-content">
+		<div id="gurgaon" class="tab-pane fade in active">
+				<div class="col-md-6">
+					<h3>Ardee Mall</h3>
+					<p>Shop Number B-8, Ground Floor, Ardee Mall Sec-52, Gurgaon, Haryana, 122011</p>
+					<p>11:00 AM - 11:00 PM</p>
+					<p>0124-448-8102</p>
+					<p>ggn.ardee@mamaearth.in</p>
+					<p><button class="btn btn-info">Get Direction</button></p>
+
+				</div>
+				<div class="col-md-6 pad">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56122.534491796796!2d77.08602!3d28.459712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18c6bd59f17f%3A0xf5c8df9219eb377c!2sSector%2043%2C%20Gurugram%2C%20Haryana%20122022!5e0!3m2!1sen!2sin!4v1657739447884!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+		</div>
+
+		<div id="delhi" class="tab-pane fade">
+				<div class="col-md-6">
+					<h3>Kamla Nagar</h3>
+					<p>Shop No -3, 15, U.B Bunglow Road, Jawahar Nagar, New Delhi, Delhi, 110007</p>
+					<p>011-4106-3565</p>
+					<p>del.kamlanagar1@mamaearth.in</p>
+					<p><button class="btn btn-info">Get Direction</button></p>
+				</div>
+				<div class="col-md-6 pad">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56003.61702689509!2d77.17119946059955!3d28.682883470921652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd7a1b7bd9e1%3A0xc7107468ee2aba85!2sMamaearth%20Exclusive%20Store!5e0!3m2!1sen!2sin!4v1657740630067!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+		</div>
+
+		<div id="noida" class="tab-pane fade">
+			<div class="col-md-6">
+					<h3>DLF Mall of India</h3>
+					<p>Unit No - 3K7A, Second Floor, Noida,Uttar Pradesh, 201304</p>
+					<p>11:00 AM - 12:00 AM</p>
+					<p>noida.moi@mamaearth.in</p>
+					<p><button class="btn btn-info">Get Direction</button></p>
+				</div>
+				<div class="col-md-6 pad">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56003.61702689509!2d77.17119946059955!3d28.682883470921652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd7a1b7bd9e1%3A0xc7107468ee2aba85!2sMamaearth%20Exclusive%20Store!5e0!3m2!1sen!2sin!4v1657740630067!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+		</div>
+
+		<div id="chandigarh" class="tab-pane fade">
+			<div class="col-md-6">
+					<h3>Elante Mall</h3>
+					<p>Unit No -KS2A, Second Floor,</p>
+					<p>Plot No.178-178A,</p>
+					<p>Industrial & Business Park, Phase-I,</p>
+					<p>Chandigarh, Punjab, 160002</p>
+					<p>chd.elante@mamaearth.in</p>
+					<p><button class="btn btn-info">Get Direction</button></p>
+				</div>
+				<div class="col-md-6 pad">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.4661536269396!2d76.79888801430515!3d30.705293044007387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed4b788fe763%3A0x71fb079a3e817f5e!2sMamaearth%20Exclusive%20Store!5e0!3m2!1sen!2sin!4v1657740969048!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+	</div>			
+
+	</div>	
+
+
+		<div class="row">
+			<div class="justify">
+			<div class="col-md-3">
+				<h4>USEFUL LINKS</h4>
+				<p><a href="#">Privacy Policy</a></p>
+				<p><a href="#">Returns</a></p>
+				<p><a href="#">Terms and Conditions</a></p>
+				<p><a href="#">Privacy Policy</a></p>
+				<p><a href="#">Returns</a></p>
+				<p><a href="#">Terms and Conditions</a></p>
+				<p><a href="#">Privacy Policy</a></p>
+				<p><a href="#">Returns</a></p>
+				<p><a href="#">Terms and Conditions</a></p>
+			</div>
+			
+
+			<div class="col-md-3 ">
+				<h4>CATEGORIES</h4>
+				<p><a href="#">Baby</a></p>
+				<p><a href="#">Hair</a></p>
+				<p><a href="#">Beauty</a></p>
+				<p><a href="#">Body</a></p>
+				<p><a href="#">Face</a></p>
+				<p><a href="#">Gift Combo</a></p>
+			</div>
+			<div class="col-md-3 ">
+				<h4>MY ACCOUNT</h4>
+				<p><a href="#">Account</a></p>
+				<p><a href="#">Order</a></p>
+				<p><a href="#">Address</a></p>
+			</div>
+
+			<div class="col-md-3 ">
+				<img src="brand.jpg" width="50%">
+			</div>
+		</div>
+		</div>
+
+	<p class="foot pad">© 2021 Honasa Consumer Pvt. Ltd. All Rights Reserved</p> 
+</body>
+</html>

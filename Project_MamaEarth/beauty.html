@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Beauty</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	 <script src="jquery.min.js"></script>
+	 <script src="bootstrap.min.js"></script>
+	 <style type="text/css">
+	 	.justify
+	 	{
+	 		padding: 10px;
+	 		display: flex;
+	 		justify-content: space-around;
+	 	}
+	 	.idcard
+	 	{
+	 		border: 1px solid lightgray;
+	 		margin: 1px;
+	 		text-align: center;
+	 		box-shadow: 0px 4px 8px 0px black;
+	 		border-radius: 5px;
+
+
+	 	}
+	 	.idcard:hover
+	 	{
+	 		box-shadow: 0px 0px 0px 0px;
+	 	}
+	 	.gallery
+	 	{
+	 		width: 80%;
+	 	}
+	 	.cart
+	 	{
+	 		color: aqua;
+	 	}
+	 	.cart:hover
+	 	{
+	 		background: aqua;
+	 		color: white;
+	 	}
+	 	td
+	 	{
+	 		padding: 30px;
+	 		text-align: center;
+	 	}
+	 </style>
+</head>
+<body>
+<nav class="navbar navbar-default" style="font-size: 20px;">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<div class="navbar-brand"><img src="mamaearth-logo.png" width="100%" height="40px"></div>
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"><span class="caret"></span></button>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar">
+			<ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown"><a href="" data-toggle="dropdown" class="dropdown-toggle">About<span class="caret"></span></a>
+			<ul  class="dropdown-menu">
+				<li><a href="body.html" >Body</a></li>
+				<li><a href="beauty.html" >Beauty</a></li>
+				<li><a href="face.html" >Face</a></li>
+			</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+		</div>
+	</nav>
+
+	<!--Image Slide-->
+	<div class="container-fluid">
+	<div class="carousel slide" id="slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#slide" data-slide-to="0" class="active"></li>
+				<li data-target="#slide" data-slide-to="1"></li>
+				<li data-target="#slide" data-slide-to="2"></li>
+				<li data-target="#slide" data-slide-to="3"></li>
+			</ol>
+
+		<div class="carousel-inner">
+			<div class="item active">
+				<center><img src="Desktop1.jpg" style="height: 400px;"></center>
+			</div>
+			<div class="item">
+				<center><img src="Desktop0.jpg" style="height: 400px; width: 75%;"></center>
+			</div>
+			<div class="item">
+				<center><img src="Desktop2.jpg" style="height: 400px; "></center>
+			</div>
+			<div class="item">
+				<center><img src="Desktop3.jpg" style="height: 400px; width: 75%;"></center>
+			</div>
+		</div>
+
+		<a href="#slide" class="left carousel-control" data-slide="prev"></a>
+		<a href="#slide" class="right carousel-control" data-slide="next"></a>
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+		
+		<ul class="breadcrumb">
+			<li><a href="body.html" >Body</a></li>
+			<li><a href="beauty.html"  data-target="#beautyTab">Beauty</a></li>
+			<li><a href="face.html" >Face</a></li>
+		</ul>
+
+		<br><br>
+		
+			
+			<div id="beautyTab">
+			<table>
+				<tr>
+					<td>
+					<div class="idcard">
+						<img src="vitamin3.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$399</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="vitamin1.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$567</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="onion.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$499</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="orange.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$672</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+				</tr>				
+				<tr>
+					<td>
+					<div class="idcard">
+						<img src="ubtan.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$399</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="onion.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$876</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="vitamin1.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$432</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="hair.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$599</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<div class="idcard">
+						<img src="hair2.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$399</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="hair3.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$999</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="bye3.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$278</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+					<td>
+					<div class="idcard">
+						<img src="hair.jpg" class="gallery">
+						<p>Onion Hair Oil form Hair Regrowth and <br>Hair Fall Control with Redensyl,150ml</p>
+						<h3>$399</h3>
+						<button class="btn btn-default cart">ADD TO CART</button>
+					</div>
+					</td>
+				</tr>
+				</table>
+			</div>	
+
+			<div class="container-fluid">
+	<div class="panel-group">
+		<div class="panel">
+			<div class="panel-heading">
+				<a href="#panel1" data-toggle="collapse">Meet Your Plant</a><span class="caret"></span>
+				<div id="panel1" class="panel-collapse collapse">
+					Once an order is placed on our website, we initiate the process of planting and linking your order with your sapling. Within a few days, along with the delivery of your products, we will also share the details of your plant by email. You can also check details about your tree in the above section.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="panel-group">
+		<div class="panel">
+			<div class="panel-heading">
+				<a href="#panel2" data-toggle="collapse">Powered By</a><span class="caret"></span>
+				<div id="panel2" class="panel-collapse collapse">
+					SankalpTaru Foundation is an IT-enabled NGO, spreading greenery with its core philosophy of “planting trees for the people, by the people”. Having rooted and survived close to a million trees across 21 states of India, they are constantly escalating healthy-happy smiles through trees. With each flourishing plant, they look to maximize socio-environmental impact and successfully fighting back the detrimental demons of pollution, and strengthening the livelihood of poor farmers to create a rich biodiverse ecosystem.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="panel-group">
+		<div class="panel">
+			<div class="panel-heading">
+				<a href="#panel3" data-toggle="collapse">Our Promise</a><span class="caret"></span>
+				<div id="panel3" class="panel-collapse collapse">
+					We have always made choices that are good for consumers and for the environment. We make toxin free natural products with a philosophy of animal cruelty free, and plastic positivity.. With your help, we now target to grow and sustain more than a million trees that will improve air quality, soil quality, and even the groundwater levels.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
