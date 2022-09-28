@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interest Calculator</title>
+	 <link rel="stylesheet" href="bootstrap.min.css">
+	 <script src="jquery.min.js"></script>
+	 <script src="bootstrap.min.js"></script>
+	 <style type="text/css">
+		.footer
+		{
+			padding-top: 100px;
+			text-align: center;
+			padding-left: 50px;
+			padding-right: 50px;
+			font-weight: bold;
+		}
+		.but
+		{
+			background: palevioletred;
+			color: white;
+		}
+		</style>
+	 <script type="text/javascript">
+		function calculate()
+		{
+
+			//HDFC Business Loan
+			//var interest = amount * 0.06 ;
+			//var repay = amount + interest ;
+			//var emi_hdfcB = repay/month;
+			//document.getElementById('hdfcB').value=emi_hdfcB;
+
+			var amount = document.getElementById('amount').value;
+			amount = +amount;
+
+			//1st year amount
+			document.getElementById('1amt').value=amount;
+
+			//1st year overall
+			var ci_1over=amount;
+			document.getElementById('1over').value=ci_1over;
+
+
+
+
+			//2nd year amount
+			var ci_2amt=amount;
+			document.getElementById('2amt').value=ci_2amt;
+
+			//2nd year interest
+			var ci_2int=ci_1over+(ci_1over*0.05);
+			document.getElementById('2int').value=ci_2int;
+
+			//2nd year overall
+			var ci_2over=ci_2amt+ci_2int;
+			document.getElementById('2over').value=ci_2over;
+
+
+
+
+			//3rd year amount
+			var ci_3amt=amount;
+			document.getElementById('3amt').value=ci_3amt;
+
+			//3rd year interest
+			var ci_3int=ci_2over+(ci_2over*0.05);
+			document.getElementById('3int').value=ci_3int;
+
+			//3rd year overall
+			var ci_3over=ci_3amt+ci_3int;
+			document.getElementById('3over').value=ci_3over;
+
+			
+		}
+	</script>
+</head>
+
+<body style="background: lightcyan;">
+<center style="padding-left: 50px; padding-right: 50px;">
+		<br><br>
+		<h1 style="color: deeppink;">Compound Interest Calculator for 3 years</h1>
+		<table class="table" style=" border: : 2px solid mediumvioletred;">
+			<tr>
+				<td>Name : </td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Amount Investing: </td>
+				<td><input type="number" name="" id="amount"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input class="btn but" type="submit" name="" value="Submit" onclick="calculate()">&nbsp
+					<input class="btn but" type="reset" name="" value="Cancel">
+				</td>
+			</tr>
+		</table>
+	</center>
+
+
+	<div class="footer">
+	<table class="table table-hover" style="border: 2px solid mediumvioletred;">
+		<tr>
+			<td>Years </td>
+			<td>Amount</td>
+			<td>Interest amount</td>
+			<td>Overall</td>
+		</tr>
+		<tr>
+			<td>First Year</td>
+			<td><input type="" name="" id="1amt"></td>
+			<td>--nil--</td>
+			<td><input type="" name="" id="1over"></td>
+		</tr>
+		<tr>
+			<td>Second Year</td>
+			<td><input type="" name="" id="2amt"></td>
+			<td><input type="" name="" id="2int"></td>
+			<td><input type="" name="" id="2over"></td>
+		</tr>
+		<tr>
+			<td>Third Year</td>
+			<td><input type="" name="" id="3amt"></td>
+			<td><input type="" name="" id="3int"></td>
+			<td><input type="" name="" id="3over"></td>
+		</tr>
+
+	</table>
+</div>
+</body>
+</html>

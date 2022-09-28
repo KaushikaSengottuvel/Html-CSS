@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EMI Calculator</title>
+	 <link rel="stylesheet" href="bootstrap.min.css">
+	 <script src="jquery.min.js"></script>
+	 <script src="bootstrap.min.js"></script>
+	<style type="text/css">
+		.footer
+		{
+			padding-top: 100px;
+			text-align: center;
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		.but
+		{
+			background: palevioletred;
+			color: white;
+		}
+	</style>
+	<script type="text/javascript">
+		function calculate()
+		{
+			var amount = document.getElementById('amount').value;
+			var month = document.getElementById('month').value;
+			amount = +amount;
+			month = +month;
+
+			//Axis House Loan
+			var interest = amount * 0.05 ;
+			var repay = amount + interest ;
+			var emi_axisH = repay/month;
+			document.getElementById('axisH').value=emi_axisH;
+
+			//ICICI House Loan
+			var interest = amount * 0.15 ;
+			var repay = amount + interest ;
+			var emi_iciciH = repay/month;
+			document.getElementById('iciciH').value=emi_iciciH;
+
+			//HDFC House Loan
+			var interest = amount * 0.18 ;
+			var repay = amount + interest ;
+			var emi_hdfcH = repay/month;
+			document.getElementById('hdfcH').value=emi_hdfcH;
+
+			//Axis Personal Loan
+			var interest = amount * 0.08 ;
+			var repay = amount + interest ;
+			var emi_axisP = repay/month;
+			document.getElementById('axisP').value=emi_axisP;
+
+			//ICICI Personal Loan
+			var interest = amount * 0.16 ;
+			var repay = amount + interest ;
+			var emi_iciciP = repay/month;
+			document.getElementById('iciciP').value=emi_iciciP;
+
+			//HDFC Personal Loan
+			var interest = amount * 0.21 ;
+			var repay = amount + interest ;
+			var emi_hdfcP = repay/month;
+			document.getElementById('hdfcP').value=emi_hdfcP;
+
+			//Axis Business Loan
+			var interest = amount * 0.12 ;
+			var repay = amount + interest ;
+			var emi_axisB = repay/month;
+			document.getElementById('axisB').value=emi_axisB;
+
+			//ICICI Business Loan
+			var interest = amount * 0.12 ;
+			var repay = amount + interest ;
+			var emi_iciciB = repay/month;
+			document.getElementById('iciciB').value=emi_iciciB;
+
+			//HDFC Business Loan
+			var interest = amount * 0.06 ;
+			var repay = amount + interest ;
+			var emi_hdfcB = repay/month;
+			document.getElementById('hdfcB').value=emi_hdfcB;
+		}
+	</script>
+</head>
+<body style="background: lightblue;">
+
+	<center style="padding-left: 50px; padding-right: 50px;">
+		<br><br>
+		<h1 style="color: mediumvioletred;">EMI Calculator</h1>
+		<table class="table" style=" border: : 2px solid mediumvioletred;">
+			<tr>
+				<td>Name : </td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Loan Amount : </td>
+				<td><input type="number" name="" id="amount"></td>
+			</tr>
+			<tr>
+				<td>Installment : </td>
+				<td>
+					<select id="month">
+						<option value="12">12 Months</option>
+						<option value="24">24 Months</option>
+						<option value="36">36 Months</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input class="btn but" type="submit" name="" value="Submit" onclick="calculate()">&nbsp
+					<input class="btn but" type="reset" name="" value="Cancel">
+				</td>
+			</tr>
+		</table>
+	</center>
+
+
+<div class="footer">
+	<table class="table table-hover" style="border: 2px solid mediumvioletred;">
+		<tr>
+			<td>Plan </td>
+			<td>Axis Bank</td>
+			<td>ICICI Bank</td>
+			<td>HDFC Bank</td>
+		</tr>
+		<tr>
+			<td>House Loan</td>
+			<td><input type="" name="" id="axisH"></td>
+			<td><input type="" name="" id="iciciH"></td>
+			<td><input type="" name="" id="hdfcH"></td>
+		</tr>
+		<tr>
+			<td>Personal Loan</td>
+			<td><input type="" name="" id="axisP"></td>
+			<td><input type="" name="" id="iciciP"></td>
+			<td><input type="" name="" id="hdfcP"></td>
+		</tr>
+		<tr>
+			<td>Business Loan</td>
+			<td><input type="" name="" id="axisB"></td>
+			<td><input type="" name="" id="iciciB"></td>
+			<td><input type="" name="" id="hdfcB"></td>
+		</tr>
+
+	</table>
+</div>
+</body>
+</html>
